@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  background-color: rgb(175, 175, 224);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: auto;
+  margin: 0;
+
+  /* Image */
+  background-color: #999;
+  background-image: url(../images/main-bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+#scroll-container {
+    padding: 0 1rem;
+    overflow: auto;
+    max-height: 95vh;
+    max-width: 450px;
+    width: 100%;
+    
+}
+#weather-container {
+    background: #222;
+    width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+h2,
+label,
+p {
+  color: #fff;
+  margin: 8px 0;
+}
+
+input {
+  width: calc(100% - 19px);
+  box-sizing: border-box;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid white;
+  /* margin: 20px; */
+  width: 100%;
+}
+button {
+  background: black;
+  color: rgb(249, 110, 10);
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+  
+  padding: 10px;
+  font-size: 1rem;
+}
+button:hover {
+  background: rgba(69, 69, 69, 0.582);
+}
+
+#temp-div p {
+  font-size: 60px;
+  margin-top: -30px;
+}
+#weather-info {
+  font-size: 20px;
+}
+#weather-icon {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 10px;
+  margin-bottom: 0;
+  display: none;
+}
+#hourly-forecast {
+  margin-top: 50px;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+}
+.hourly-item {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 8px;
+  flex: auto;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  color: white;
+}
+.hourly-item ing {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+#hourly-heading {
+  color: #fff;
+  margin-top: 10px;
+}

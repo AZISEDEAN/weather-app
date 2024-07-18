@@ -1,0 +1,29 @@
+<!-- Weather App -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="assets/styles/stlye.css" />
+  </head>
+  <body>
+    <div id="scroll-container">
+      <div id="weather-container">
+        <!-- Search Place -->
+        <h2>Weather App</h2>
+        <input type="text" id="city" placeholder="Enter city" />
+        <button onclick="getWeather()" id="search-btn">Search</button>
+        <img
+          src="assets/images/website.png"
+          id="weather-icon"
+          alt="weather icon" />
+
+        <!-- Result Area -->
+        <div id="temp-div"></div>
+        <div id="weather-info"></div>
+        <div id="hourly-forecast"></div>
+      </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
